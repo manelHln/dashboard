@@ -8,8 +8,9 @@ const AppState = createContext(INITIAL_STATE)
 
 
 export const StateProvider = ({children}) => {
+    const [openSidebar, setOpenSidebar] = useState(false)
     return (
-        <AppState.Provider value={{}}>
+        <AppState.Provider value={{openSidebar, setOpenSidebar}}>
             {children}
         </AppState.Provider>
     )

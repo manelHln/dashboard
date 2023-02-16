@@ -1,4 +1,15 @@
-body {
+* {
   margin: 0;
-  font-family: 'Montserrat';
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+a{
+  text-decoration: none !important;
+}
+
+a:hover{
+  color: #fff !important;
 }
