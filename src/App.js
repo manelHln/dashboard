@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Navbar handleCilck={handleShow} />
-      <div className="d-flex">
+      <div style={{display: "flex"}}>
         <Sidebar showNav={show} />
         <Routes>
           <Route path="/projects" element={<Project />} />

@@ -1,3 +1,8 @@
+:root {
+  --color-red: #c30608;
+  --color-black: #2a2a2a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +10,16 @@
   font-family: sans-serif;
 }
 
-
-a{
-  text-decoration: none !important;
+.icon-button {
+  margin-right: 12px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
 }
 
-a:hover{
-  color: #fff !important;
+.icon-button:hover {
+  color: #a9a0a0;
 }
