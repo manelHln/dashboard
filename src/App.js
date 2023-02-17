@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import { Feedback, Project } from "./pages";
 
 function App() {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(true)
   const handleShow = () => setShow(prev => !prev)
   return (
     <div className="App">
@@ -13,8 +13,8 @@ function App() {
       <div style={{display: "flex"}}>
         <Sidebar showNav={show} />
         <Routes>
-          <Route path="/projects" element={<Project />} />
           <Route path="/"  element={<Feedback />} />
+          <Route path="/projects" element={<Project />} />
         </Routes>
       </div>
     </div>

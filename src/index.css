@@ -23,3 +23,18 @@
 .icon-button:hover {
   color: #a9a0a0;
 }
+ .flex {
+  display: flex;
+ }
+
+ .block{
+  margin : 20px;
+ }
+
+ .title{
+  font-size: 40px;
+ }
+
+ .full{
+  width: 100%;
+ }
