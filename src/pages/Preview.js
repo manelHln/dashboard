@@ -1,9 +1,9 @@
-// import React, {useEffect, useState} from "react";
-import FeedbackCard from "../components/card/FeedbackCard";
+// import React, {useState, useEffect} from "react";
 // import fetchData from "../config/fetch";
-import { reviews } from "../dummyData";
+import ImageCard from "../components/card/ImageCard";
+import { projectPreview } from "../dummyData";
 
-const Feedback = () => {
+const Preview = () => {
   // const [data, setData] = useState(null)
 
   // useEffect(() => {
@@ -14,23 +14,21 @@ const Feedback = () => {
 
   //   getData();
   // }, []);
-
-
   return (
     <div style={{ width: "100%" }} className="p-3">
       <div className="page-header row no-gutters py-4">
         <div className="col-12 col-sm-4 text-center text-sm-left mb-0">
           <span className="text-uppercase page-subtitle">Overview</span>
-          <h3 className="page-title">Users Feedbacks</h3>
+          <h3 className="page-title">Preview Projects</h3>
         </div>
       </div>
-      <div className="container-fluid">
-        <div className="row">
-          <FeedbackCard data={reviews} />
-        </div>
+      <div className="row">
+        <ImageCard data={projectPreview} />
+      </div>
+      <div>
       </div>
     </div>
   );
 };
 
-export default Feedback;
+export default Preview;
